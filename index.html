@@ -1,4 +1,238 @@
+
 <!DOCTYPE html>
-<html lang="en">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Namma Dhwani</title><style>*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;background:#f7f8fa;color:#172033}header{background:linear-gradient(135deg,#123b63,#176b87);color:#fff;padding:55px 20px;text-align:center}header h1{margin:0 0 12px;font-size:42px}header p{margin:0;font-size:19px}nav{background:#fff;padding:14px;text-align:center;box-shadow:0 2px 8px #0001}nav a{color:#123b63;text-decoration:none;margin:0 12px;font-weight:bold}main{max-width:900px;margin:auto;padding:30px 18px}section{background:#fff;margin-bottom:20px;padding:25px;border-radius:14px;box-shadow:0 3px 12px #00000012}h2{color:#176b87}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:15px}.card{padding:20px;border-radius:12px;background:#eef6f8}footer{text-align:center;background:#123b63;color:#fff;padding:25px}</style></head>
-<body><header><h1>Namma Dhwani</h1><p>People's Voices • Farmers' Lives • Village Stories</p></header><nav><a href="#about">About</a><a href="#farmers">Farmers</a><a href="#village">Village</a><a href="#contact">Contact</a></nav><main><section id="about"><h2>About Namma Dhwani</h2><p>Namma Dhwani is a platform for sharing people's voices, farmers' lives, village issues, achievements and important local stories.</p></section><section id="farmers"><h2>Farmers' Lives</h2><div class="cards"><div class="card"><h3>🌾 Farmers</h3><p>Stories, challenges and achievements of our farmers.</p></div><div class="card"><h3>💧 Water & Agriculture</h3><p>Important information about farming, water and rural development.</p></div><div class="card"><h3>📢 People's Voice</h3><p>Local issues and public concerns brought to attention.</p></div></div></section><section id="village"><h2>Village Stories</h2><p>Local news, community stories, public issues and positive developments from villages and rural communities.</p></section><section id="contact"><h2>Contact</h2><p>For news, stories or public information, connect with Namma Dhwani.</p></section></main><footer>© 2026 Namma Dhwani — People's Voice</footer></body></html>
+<html lang="kn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ನಮ್ಮ ಧ್ವನಿ</title>
+
+<style>
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+body{
+  font-family:Arial,"Noto Sans Kannada",sans-serif;
+  background:#f4f7f8;
+  color:#222;
+  line-height:1.6;
+}
+
+header{
+  background:linear-gradient(135deg,#075985,#0e7490);
+  color:white;
+  text-align:center;
+  padding:55px 20px;
+}
+
+header h1{
+  font-size:42px;
+  margin-bottom:10px;
+}
+
+header p{
+  font-size:20px;
+}
+
+nav{
+  background:white;
+  display:flex;
+  justify-content:center;
+  gap:28px;
+  padding:18px 10px;
+  box-shadow:0 2px 10px #ddd;
+  position:sticky;
+  top:0;
+  z-index:10;
+}
+
+nav a{
+  text-decoration:none;
+  color:#075985;
+  font-weight:bold;
+  font-size:17px;
+}
+
+.container{
+  max-width:1000px;
+  margin:auto;
+  padding:25px 18px;
+}
+
+.card{
+  background:white;
+  border-radius:18px;
+  padding:28px;
+  margin:22px 0;
+  box-shadow:0 4px 15px #ddd;
+}
+
+.card h2{
+  color:#0e7490;
+  margin-bottom:15px;
+  font-size:28px;
+}
+
+.category{
+  background:#e6f4f7;
+  border-radius:15px;
+  padding:22px;
+  margin:15px 0;
+}
+
+.category h3{
+  color:#075985;
+  font-size:22px;
+  margin-bottom:8px;
+}
+
+.button{
+  display:inline-block;
+  background:#075985;
+  color:white;
+  padding:12px 22px;
+  border-radius:8px;
+  text-decoration:none;
+  margin-top:15px;
+}
+
+footer{
+  background:#073b4c;
+  color:white;
+  text-align:center;
+  padding:30px 15px;
+  margin-top:30px;
+}
+
+@media(max-width:600px){
+  header h1{
+    font-size:34px;
+  }
+
+  header p{
+    font-size:17px;
+  }
+
+  nav{
+    gap:14px;
+    flex-wrap:wrap;
+  }
+
+  nav a{
+    font-size:15px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>ನಮ್ಮ ಧ್ವನಿ</h1>
+  <p>ಜನರ ಧ್ವನಿ • ರೈತರ ಬದುಕು • ಗ್ರಾಮದ ಕಥೆಗಳು</p>
+</header>
+
+<nav>
+  <a href="#home">ಮುಖಪುಟ</a>
+  <a href="#farmers">ರೈತರ ಧ್ವನಿ</a>
+  <a href="#village">ಗ್ರಾಮ</a>
+  <a href="#public">ಸಾರ್ವಜನಿಕರ ಧ್ವನಿ</a>
+  <a href="#contact">ಸಂಪರ್ಕ</a>
+</nav>
+
+<div class="container">
+
+<section id="home" class="card">
+  <h2>ನಮ್ಮ ಧ್ವನಿ</h2>
+  <p>
+    ಇದು ಜನರ ಸಮಸ್ಯೆಗಳು, ರೈತರ ಬದುಕು, ಗ್ರಾಮೀಣ ಪ್ರದೇಶಗಳ
+    ಸಮಸ್ಯೆಗಳು, ಸಾಧನೆಗಳು ಮತ್ತು ಸ್ಥಳೀಯ ಸುದ್ದಿಗಳಿಗೆ ಧ್ವನಿಯಾಗುವ
+    ಒಂದು ಸಣ್ಣ ಪ್ರಯತ್ನ.
+  </p>
+</section>
+
+<section id="farmers" class="card">
+  <h2>🌾 ರೈತರ ಧ್ವನಿ</h2>
+
+  <div class="category">
+    <h3>ರೈತರ ಬದುಕು</h3>
+    <p>ರೈತರ ಸಮಸ್ಯೆಗಳು, ಹೋರಾಟಗಳು, ಸಾಧನೆಗಳು ಮತ್ತು ಬದುಕಿನ ಕಥೆಗಳು.</p>
+  </div>
+
+  <div class="category">
+    <h3>🌱 ಕೃಷಿ ಮಾಹಿತಿ</h3>
+    <p>ಕೃಷಿ, ಬೆಳೆ, ಮಾರುಕಟ್ಟೆ ಮತ್ತು ರೈತರಿಗೆ ಉಪಯುಕ್ತ ಮಾಹಿತಿಗಳು.</p>
+  </div>
+</section>
+
+<section id="village" class="card">
+  <h2>🏘️ ಗ್ರಾಮದ ಧ್ವನಿ</h2>
+
+  <div class="category">
+    <h3>ಗ್ರಾಮದ ಸಮಸ್ಯೆಗಳು</h3>
+    <p>
+      ರಸ್ತೆ, ಕುಡಿಯುವ ನೀರು, ವಿದ್ಯುತ್, ಚರಂಡಿ, ಶಾಲೆ
+      ಮತ್ತು ಗ್ರಾಮೀಣ ಮೂಲಸೌಕರ್ಯಗಳ ಸಮಸ್ಯೆಗಳಿಗೆ ಧ್ವನಿ.
+    </p>
+  </div>
+
+  <div class="category">
+    <h3>ಗ್ರಾಮದ ಸಾಧನೆಗಳು</h3>
+    <p>
+      ನಮ್ಮ ಗ್ರಾಮದ ಉತ್ತಮ ಕೆಲಸಗಳು, ಸಾಧಕರು ಮತ್ತು
+      ಜನರ ಯಶಸ್ಸಿನ ಕಥೆಗಳು.
+    </p>
+  </div>
+</section>
+
+<section id="public" class="card">
+  <h2>📢 ಸಾರ್ವಜನಿಕರ ಧ್ವನಿ</h2>
+
+  <p>
+    ನಿಮ್ಮ ಗ್ರಾಮದ ಸಮಸ್ಯೆ ಅಥವಾ ಸಾರ್ವಜನಿಕ ಸಮಸ್ಯೆಯನ್ನು
+    ನಮ್ಮೊಂದಿಗೆ ಹಂಚಿಕೊಳ್ಳಿ. ಜನರ ಧ್ವನಿಯನ್ನು ಸಂಬಂಧಪಟ್ಟ
+    ಅಧಿಕಾರಿಗಳ ಗಮನಕ್ಕೆ ತಲುಪಿಸುವುದು ನಮ್ಮ ಉದ್ದೇಶ.
+  </p>
+
+  <a class="button" href="#contact">ಸಮಸ್ಯೆ ತಿಳಿಸಿ</a>
+</section>
+
+<section class="card">
+  <h2>📰 ಇತ್ತೀಚಿನ ಸುದ್ದಿ</h2>
+
+  <div class="category">
+    <h3>ಸ್ಥಳೀಯ ಸುದ್ದಿ</h3>
+    <p>ನಮ್ಮ ಊರು ಮತ್ತು ಸುತ್ತಮುತ್ತಲಿನ ಪ್ರಮುಖ ಸುದ್ದಿಗಳು ಇಲ್ಲಿ ಪ್ರಕಟವಾಗಲಿವೆ.</p>
+  </div>
+
+  <div class="category">
+    <h3>ಜನರ ಕಥೆಗಳು</h3>
+    <p>ಸಾಮಾನ್ಯ ಜನರ ಬದುಕು, ಹೋರಾಟ ಮತ್ತು ಸಾಧನೆಯ ಕಥೆಗಳು.</p>
+  </div>
+</section>
+
+<section id="contact" class="card">
+  <h2>📞 ನಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸಿ</h2>
+
+  <p>
+    ನಿಮ್ಮ ಸುದ್ದಿ, ಸಮಸ್ಯೆ, ಮಾಹಿತಿ ಅಥವಾ ಸಾರ್ವಜನಿಕ ವಿಚಾರವನ್ನು
+    ನಮ್ಮೊಂದಿಗೆ ಹಂಚಿಕೊಳ್ಳಬಹುದು.
+  </p>
+
+  <p style="margin-top:15px;">
+    <strong>ನಮ್ಮ ಧ್ವನಿ</strong><br>
+    ಜನರಿಗಾಗಿ • ಜನರೊಂದಿಗೆ
+  </p>
+</section>
+
+</div>
+
+<footer>
+  <p>© 2026 ನಮ್ಮ ಧ್ವನಿ</p>
+  <p>ಜನರ ಧ್ವನಿ • ರೈತರ ಬದುಕು • ಗ್ರಾಮದ ಕಥೆಗಳು</p>
+</footer>
+
+</body>
+</html>
