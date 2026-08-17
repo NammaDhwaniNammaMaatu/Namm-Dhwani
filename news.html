@@ -3,67 +3,373 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ಸುದ್ದಿ | ನಮ್ಮ ಧ್ವನಿ</title>
+
+<title>ಸುದ್ದಿಗಳು | ನಮ್ಮ ಧ್ವನಿ</title>
+
 <style>
-*{box-sizing:border-box;margin:0;padding:0}
-body{font-family:Arial,"Noto Sans Kannada",sans-serif;background:#f4f7f8;color:#222;line-height:1.7}
-header{background:linear-gradient(135deg,#075985,#0e7490);color:white;text-align:center;padding:45px 20px}
-header h1{font-size:38px;margin-bottom:8px}
-header p{font-size:18px}
-nav{background:white;padding:14px;text-align:center;box-shadow:0 2px 8px #ddd}
-nav a{color:#075985;text-decoration:none;font-weight:bold;margin:0 12px}
-.container{max-width:900px;margin:30px auto;padding:0 16px}
-.title{color:#075985;margin-bottom:20px;font-size:30px}
-.news{background:white;border-radius:16px;padding:22px;margin-bottom:20px;box-shadow:0 3px 12px #ddd}
-.news h2{color:#075985;margin-bottom:8px}
-.date{color:#777;font-size:14px;margin-bottom:12px}
-.news img{width:100%;max-height:350px;object-fit:cover;border-radius:12px;margin:12px 0}
-.button{display:inline-block;background:#075985;color:white;padding:10px 18px;border-radius:8px;text-decoration:none;margin-top:12px}
-footer{text-align:center;background:#075985;color:white;padding:25px;margin-top:40px}
+
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
+}
+
+body{
+font-family:Arial,"Noto Sans Kannada",sans-serif;
+background:#f3f7f8;
+color:#222;
+line-height:1.7;
+}
+
+header{
+background:linear-gradient(135deg,#075985,#0e7490);
+color:white;
+text-align:center;
+padding:45px 20px;
+}
+
+header h1{
+font-size:40px;
+margin-bottom:8px;
+}
+
+header p{
+font-size:18px;
+}
+
+nav{
+background:white;
+padding:15px 8px;
+text-align:center;
+box-shadow:0 2px 10px #ddd;
+}
+
+nav a{
+color:#075985;
+text-decoration:none;
+font-weight:bold;
+margin:0 10px;
+}
+
+.container{
+max-width:900px;
+margin:30px auto;
+padding:0 15px;
+}
+
+.page-title{
+color:#075985;
+font-size:31px;
+margin-bottom:20px;
+}
+
+.news-card{
+background:white;
+border-radius:18px;
+margin-bottom:25px;
+overflow:hidden;
+box-shadow:0 4px 15px #ddd;
+}
+
+.news-card img{
+width:100%;
+height:240px;
+object-fit:cover;
+display:block;
+}
+
+.news-content{
+padding:20px;
+}
+
+.category{
+display:inline-block;
+background:#e1f2f6;
+color:#075985;
+padding:5px 12px;
+border-radius:20px;
+font-size:13px;
+margin-bottom:10px;
+}
+
+.news-card h2{
+color:#075985;
+font-size:25px;
+line-height:1.4;
+margin-bottom:7px;
+}
+
+.date{
+color:#777;
+font-size:14px;
+margin-bottom:12px;
+}
+
+.news-card p{
+font-size:17px;
+}
+
+.readmore{
+display:inline-block;
+margin-top:15px;
+background:#075985;
+color:white;
+text-decoration:none;
+padding:9px 17px;
+border-radius:8px;
+}
+
+.add-box{
+background:white;
+border:2px dashed #0e7490;
+border-radius:16px;
+padding:20px;
+margin-top:30px;
+}
+
+.add-box h3{
+color:#075985;
+margin-bottom:8px;
+}
+
+footer{
+margin-top:40px;
+background:#075985;
+color:white;
+text-align:center;
+padding:25px;
+}
+
+@media(max-width:600px){
+
+header h1{
+font-size:34px;
+}
+
+nav a{
+display:inline-block;
+margin:5px 6px;
+}
+
+.news-card img{
+height:190px;
+}
+
+.news-card h2{
+font-size:22px;
+}
+
+}
+
 </style>
 </head>
+
+
 <body>
 
+
 <header>
+
 <h1>ನಮ್ಮ ಧ್ವನಿ</h1>
-<p>ಜನರ ಧ್ವನಿ • ರೈತರ ಬದುಕು • ಗ್ರಾಮದ ಸುದ್ದಿಗಳು</p>
+
+<p>
+ಜನರ ಧ್ವನಿ • ರೈತರ ಬದುಕು • ಗ್ರಾಮದ ಸುದ್ದಿಗಳು
+</p>
+
 </header>
 
+
 <nav>
+
 <a href="index.html">ಮುಖಪುಟ</a>
-<a href="news.html">ಸುದ್ದಿಗಳು</a>
-<a href="#farmers">ರೈತರ ಧ್ವನಿ</a>
-<a href="#village">ಗ್ರಾಮ ಸುದ್ದಿ</a>
+
+<a href="news.html">📰 ಸುದ್ದಿಗಳು</a>
+
+<a href="index.html#farmers">🌾 ರೈತರ ಧ್ವನಿ</a>
+
+<a href="index.html#village">🏘️ ಗ್ರಾಮ ಸುದ್ದಿ</a>
+
 <a href="#contact">ಸಂಪರ್ಕ</a>
+
 </nav>
 
-<div class="container">
-<h2 class="title">📰 ಇತ್ತೀಚಿನ ಸುದ್ದಿಗಳು</h2>
 
-<article class="news">
-<h2>ಕೊಪ್ಪಳ ಜಿಲ್ಲೆಯ ರೈತರ ಸಮಸ್ಯೆಗಳ ಕುರಿತು ವಿಶೇಷ ವರದಿ</h2>
-<div class="date">ದಿನಾಂಕ: 17-08-2026</div>
-<p>ರೈತರ ಸಮಸ್ಯೆಗಳು, ಬೆಳೆ ನಷ್ಟ, ಮಳೆ ಕೊರತೆ, ಕೃಷಿ ಸಂಬಂಧಿತ ಸಮಸ್ಯೆಗಳು ಮತ್ತು ಸರ್ಕಾರದ ಯೋಜನೆಗಳ ಕುರಿತು ನಮ್ಮ ಧ್ವನಿ ಮೂಲಕ ಜನರಿಗೆ ಮಾಹಿತಿ ನೀಡಲಾಗುತ್ತದೆ.</p>
-</article>
+<main class="container">
 
-<article class="news">
-<h2>ಗ್ರಾಮದ ಸಮಸ್ಯೆಗಳಿಗೆ ಜನರ ಧ್ವನಿ</h2>
-<div class="date">ದಿನಾಂಕ: 17-08-2026</div>
-<p>ರಸ್ತೆ, ಕುಡಿಯುವ ನೀರು, ವಿದ್ಯುತ್, ಸರ್ಕಾರಿ ಸೇವೆಗಳು ಹಾಗೂ ಗ್ರಾಮೀಣ ಅಭಿವೃದ್ಧಿಗೆ ಸಂಬಂಧಿಸಿದ ಸಾರ್ವಜನಿಕ ಸಮಸ್ಯೆಗಳನ್ನು ಬೆಳಕಿಗೆ ತರುವ ವೇದಿಕೆ ನಮ್ಮ ಧ್ವನಿ.</p>
-</article>
 
-<article class="news">
-<h2>ನಿಮ್ಮ ಸುದ್ದಿಯನ್ನೂ ನಮಗೆ ಕಳುಹಿಸಿ</h2>
-<div class="date">ಜನರಿಗಾಗಿ • ಜನರಿಂದ</div>
-<p>ನಿಮ್ಮ ಗ್ರಾಮದ ಪ್ರಮುಖ ಸುದ್ದಿ, ಸಮಸ್ಯೆ, ಸಾಧನೆ ಅಥವಾ ಸಾರ್ವಜನಿಕ ಹಿತಾಸಕ್ತಿಯ ಮಾಹಿತಿಯನ್ನು ನಮ್ಮೊಂದಿಗೆ ಹಂಚಿಕೊಳ್ಳಬಹುದು.</p>
-<a class="button" href="mailto:your-email@example.com">ಸುದ್ದಿ ಕಳುಹಿಸಿ</a>
-</article>
+<h2 class="page-title">
+📰 ಇತ್ತೀಚಿನ ಸುದ್ದಿಗಳು
+</h2>
+
+
+
+<!--
+====================================
+ಹೊಸ ಸುದ್ದಿ ಸೇರಿಸಲು ಈ ಸಂಪೂರ್ಣ ಭಾಗವನ್ನು
+COPY ಮಾಡಿ ಕೆಳಗೆ PASTE ಮಾಡಿ
+====================================
+-->
+
+
+<article class="news-card">
+
+<img
+src="https://placehold.co/900x450/e6f2f5/075985?text=Namma+Dhwani"
+alt="ಸುದ್ದಿ ಫೋಟೋ">
+
+<div class="news-content">
+
+<span class="category">
+ರೈತರ ಸುದ್ದಿ
+</span>
+
+<h2>
+ಕೊಪ್ಪಳ ಜಿಲ್ಲೆಯ ರೈತರ ಸಮಸ್ಯೆಗಳ ಕುರಿತು ವಿಶೇಷ ವರದಿ
+</h2>
+
+<div class="date">
+📅 17-08-2026
+</div>
+
+<p>
+
+ರೈತರ ಸಮಸ್ಯೆಗಳು, ಬೆಳೆ ನಷ್ಟ, ಮಳೆ ಕೊರತೆ,
+ಕೃಷಿ ಸಂಬಂಧಿತ ಸಮಸ್ಯೆಗಳು ಮತ್ತು ಸರ್ಕಾರದ
+ಯೋಜನೆಗಳ ಕುರಿತು ನಮ್ಮ ಧ್ವನಿ ಮೂಲಕ ಜನರಿಗೆ
+ಮಾಹಿತಿ ನೀಡಲಾಗುತ್ತದೆ.
+
+</p>
+
+<a class="readmore" href="#">
+ಮುಂದೆ ಓದಿ →
+</a>
 
 </div>
 
+</article>
+
+
+
+<!-- ಎರಡನೇ ಸುದ್ದಿ -->
+
+
+<article class="news-card">
+
+<img
+src="https://placehold.co/900x450/e6f2f5/075985?text=Village+News"
+alt="ಗ್ರಾಮ ಸುದ್ದಿ ಫೋಟೋ">
+
+<div class="news-content">
+
+<span class="category">
+ಗ್ರಾಮ ಸುದ್ದಿ
+</span>
+
+<h2>
+ಗ್ರಾಮದ ಸಮಸ್ಯೆಗಳಿಗೆ ಜನರ ಧ್ವನಿ
+</h2>
+
+<div class="date">
+📅 17-08-2026
+</div>
+
+<p>
+
+ರಸ್ತೆ, ಕುಡಿಯುವ ನೀರು, ವಿದ್ಯುತ್,
+ಸರ್ಕಾರಿ ಸೇವೆಗಳು ಹಾಗೂ ಗ್ರಾಮೀಣ ಅಭಿವೃದ್ಧಿಗೆ
+ಸಂಬಂಧಿಸಿದ ಸಾರ್ವಜನಿಕ ಸಮಸ್ಯೆಗಳನ್ನು
+ಬೆಳಕಿಗೆ ತರುವ ವೇದಿಕೆ ನಮ್ಮ ಧ್ವನಿ.
+
+</p>
+
+<a class="readmore" href="#">
+ಮುಂದೆ ಓದಿ →
+</a>
+
+</div>
+
+</article>
+
+
+
+<!--
+====================================
+ಹೊಸ ಸುದ್ದಿ ಉದಾಹರಣೆ
+====================================
+
+ಈ ಭಾಗವನ್ನು COPY ಮಾಡಿ
+ಹೊಸ ಸುದ್ದಿಗಾಗಿ ಬಳಸಬಹುದು.
+
+<article class="news-card">
+
+<img
+src="ನಿಮ್ಮ-ಫೋಟೋ-ಲಿಂಕ್"
+alt="ಸುದ್ದಿ ಫೋಟೋ">
+
+<div class="news-content">
+
+<span class="category">
+ನಿಮ್ಮ ಸುದ್ದಿ ವಿಭಾಗ
+</span>
+
+<h2>
+ನಿಮ್ಮ ಸುದ್ದಿ ಶೀರ್ಷಿಕೆ
+</h2>
+
+<div class="date">
+📅 17-08-2026
+</div>
+
+<p>
+ಇಲ್ಲಿ ನಿಮ್ಮ ಸಂಪೂರ್ಣ ಸುದ್ದಿಯನ್ನು ಬರೆಯಿರಿ.
+</p>
+
+<a class="readmore" href="#">
+ಮುಂದೆ ಓದಿ →
+</a>
+
+</div>
+
+</article>
+
+====================================
+-->
+
+
+<div class="add-box">
+
+<h3>
+✍️ ನಮ್ಮ ಧ್ವನಿಗೆ ಸುದ್ದಿ ಕಳುಹಿಸಿ
+</h3>
+
+<p>
+
+ನಿಮ್ಮ ಗ್ರಾಮದ ಸುದ್ದಿ, ರೈತರ ಸಮಸ್ಯೆ,
+ಸಾರ್ವಜನಿಕ ಸಮಸ್ಯೆ, ಸಾಧನೆ ಅಥವಾ
+ಜನರಿಗೆ ಉಪಯುಕ್ತವಾದ ಮಾಹಿತಿಯನ್ನು
+ನಮ್ಮ ಧ್ವನಿ ಮೂಲಕ ಹಂಚಿಕೊಳ್ಳಬಹುದು.
+
+</p>
+
+</div>
+
+
+</main>
+
+
+
 <footer id="contact">
-<p>© 2026 ನಮ್ಮ ಧ್ವನಿ | ಜನರ ಧ್ವನಿಗೆ ಒಂದು ವೇದಿಕೆ</p>
+
+<p>
+© 2026 ನಮ್ಮ ಧ್ವನಿ
+</p>
+
+<p>
+ಜನರ ಧ್ವನಿಗೆ ಒಂದು ವೇದಿಕೆ
+</p>
+
 </footer>
+
 
 </body>
 </html>
