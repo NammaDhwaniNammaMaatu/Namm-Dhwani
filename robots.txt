@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nammadhwaninammamaatu.github.io/Namm-Dhwani/sitemap.xml
